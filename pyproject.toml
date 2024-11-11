@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-poetry-docker"
+version = "0.1.0"
+description = "Packaging for docker"
+authors = ["Christopher De Vries <devries@idolstarastronomer.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+[tool.poetry.scripts]
+app = "python_poetry_docker.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
